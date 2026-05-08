@@ -26,7 +26,7 @@ API 配置文件
 
 # 智谱 AI 配置 (推荐，有免费额度)
 ZHIPU_AI_CONFIG = {
-    'api_key': 'YOUR_ZHIPU_API_KEY_HERE',  # 替换为你的智谱 AI API Key
+    'api_key': 'bc707e6b382e47fa81efbab081a4c89b.f1GyejHS4P6rdZnE',  # 替换为你的智谱 AI API Key
     'model': 'glm-4',  # 可选模型：glm-4, glm-3-turbo, glm-4v(视觉)
     'base_url': 'https://open.bigmodel.cn/api/paas/v4',
 }
@@ -52,15 +52,25 @@ SPARK_CONFIG = {
     'model': 'generalv3',  # 可选模型：general, generalv2, generalv3
 }
 
-# DeepSeek 配置 (推荐，有免费额度)
+# DeepSeek 配置（推荐，有免费额度）
 DEEPSEEK_CONFIG = {
-    'api_key': 'YOUR_DEEPSEEK_API_KEY_HERE',  # 替换为你的 DeepSeek API Key
+    'api_key': 'sk-25396a80e4c14f939b29a06a0fe5eb32',  # 替换为你的 DeepSeek API Key
     'model': 'deepseek-chat',  # 可选模型：deepseek-chat, deepseek-coder
     'base_url': 'https://api.deepseek.com',
 }
 
+# Ollama 本地模型配置（推荐用于本地部署）
+# 使用 Ollama 运行本地大模型，无需 API Key，完全免费
+# 安装 Ollama: https://ollama.ai/
+# 可用模型：ollama list 查看已安装的模型
+OLLAMA_CONFIG = {
+    'base_url': 'http://localhost:11434',  # Ollama 默认地址
+    'model': 'deepseek-r1:1.5b',  # 可选模型：deepseek-r1:1.5b, qwen2.5vl:3b 等
+    'api_key': 'ollama',  # Ollama 不需要 API Key，可以填任意值
+}
+
 # 默认使用的配置
-DEFAULT_PROVIDER = 'zhipu'  # 可选：'zhipu', 'qwen', 'ernie', 'spark', 'deepseek'
+DEFAULT_PROVIDER = 'ollama'  # 可选：'zhipu', 'qwen', 'ernie', 'spark', 'deepseek', 'ollama'
 
 # 获取配置的辅助函数
 def get_config(provider=None):
@@ -74,6 +84,7 @@ def get_config(provider=None):
         'ernie': ERNIE_CONFIG,
         'spark': SPARK_CONFIG,
         'deepseek': DEEPSEEK_CONFIG,
+        'ollama': OLLAMA_CONFIG,
     }
     
     if provider not in config_map:

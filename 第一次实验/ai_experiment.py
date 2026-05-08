@@ -61,6 +61,8 @@ class AIClient:
                 response = self._call_ernie(message, system_prompt)
             elif self.provider == 'spark':
                 response = self._call_spark(message, system_prompt)
+            elif self.provider == 'ollama':
+                response = self._call_ollama(message, system_prompt)
             else:
                 raise ValueError(f"不支持的提供商：{self.provider}")
             
@@ -115,6 +117,26 @@ class AIClient:
         response.raise_for_status()
         result = response.json()
         return result['choices'][0]['message']['content']
+    
+    def _call_ollama(self, message, system_prompt):
+        """调用 Ollama 本地模型 API"""
+        url = f"{self.config['base_url']}/api/chat"
+        headers = {
+            "Content-Type": "application/json"
+        }
+        payload = {
+            "model": self.config['model'],
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": message}
+            ],
+            "stream": False
+        }
+        
+        response = requests.post(url, headers=headers, json=payload, timeout=60)
+        response.raise_for_status()
+        result = response.json()
+        return result['message']['content']
     
     def _call_qwen(self, message, system_prompt):
         """调用通义千问 API"""
