@@ -1,0 +1,139 @@
+[
+  {
+    "case_id": 1,
+    "category": "文学性长句",
+    "source_text": "I offer you the bitterness of a man who has looked long and long at the lonely moon.",
+    "source_lang": "en-US",
+    "target_lang": "zh-CN",
+    "test_points": [
+      "长句结构",
+      "隐喻表达",
+      "文学性"
+    ],
+    "reference": "我向你献上一个人长久凝望孤独月亮后的苦涩。",
+    "translations": [
+      {
+        "provider": "zhipu",
+        "translation": "我向你献上一个长久凝视孤月之人的苦涩。",
+        "timestamp": "2026-05-08 14:09:50"
+      }
+    ]
+  },
+  {
+    "case_id": 2,
+    "category": "文言文",
+    "source_text": "每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。",
+    "source_lang": "zh-CN",
+    "target_lang": "en-US",
+    "test_points": [
+      "古汉语虚词",
+      "典故",
+      "抽象情感"
+    ],
+    "reference": "每当我看到古人产生感慨的原因，如同符契一样相合，没有不对着文章嗟叹悲伤，不能在心里明白它。",
+    "translations": [
+      {
+        "provider": "zhipu",
+        "translation": "Whenever I read about the reasons why people of the past felt moved, it seems to resonate perfectly with my own experiences, and I cannot help but sigh with grief whenever I encounter such writings, unable to fully express these emotions in my heart.",
+        "timestamp": "2026-05-08 14:09:55"
+      }
+    ]
+  },
+  {
+    "case_id": 3,
+    "category": "句法歧义",
+    "source_text": "她是去年生的小孩。",
+    "source_lang": "zh-CN",
+    "target_lang": "en-US",
+    "test_points": [
+      "句法歧义",
+      "语义理解"
+    ],
+    "reference": "She is the child who was born last year. / She gave birth to a child last year.",
+    "translations": [
+      {
+        "provider": "zhipu",
+        "translation": "She had a baby last year.",
+        "timestamp": "2026-05-08 14:09:58"
+      }
+    ]
+  },
+  {
+    "case_id": 4,
+    "category": "诗词a",
+    "source_text": "欲买桂花同载酒，终不似，少年游。",
+    "source_lang": "zh-CN",
+    "target_lang": "en-US",
+    "test_points": [
+      "文化意象",
+      "情感转折",
+      "诗歌韵律"
+    ],
+    "reference": "I wish to buy osmanthus flowers and carry wine together, but in the end, it's not like the journey of youth.",
+    "translations": [
+      {
+        "provider": "zhipu",
+        "translation": "I'd like to buy osmanthus flowers and wine, but it's just not the same as when I was young.",
+        "timestamp": "2026-05-08 14:10:03"
+      }
+    ]
+  },
+  {
+    "case_id": 5,
+    "category": "诗词b",
+    "source_text": "人生得意须尽欢，莫使金樽空对月。",
+    "source_lang": "zh-CN",
+    "target_lang": "en-US",
+    "test_points": [
+      "文化意象",
+      "劝酒豪情",
+      "诗歌意境"
+    ],
+    "reference": "When life goes well, enjoy it to the fullest; don't let the golden cup face the moon in vain.",
+    "translations": [
+      {
+        "provider": "zhipu",
+        "translation": "Seize the day and enjoy life to the fullest, never let your golden cup face the moon empty.",
+        "timestamp": "2026-05-08 14:10:07"
+      }
+    ]
+  },
+  {
+    "case_id": 6,
+    "category": "方言",
+    "source_text": "“你今天吃啥子嘛？说嘛。",
+    "source_lang": "zh-CN",
+    "target_lang": "en-US",
+    "test_points": [
+      "地方方言",
+      "生活用语"
+    ],
+    "reference": "What are you having for dinner today? Tell me.",
+    "translations": [
+      {
+        "provider": "zhipu",
+        "translation": "What did you eat today? Come on, tell me.",
+        "timestamp": "2026-05-08 14:10:11"
+      }
+    ]
+  },
+  {
+    "case_id": 7,
+    "category": "论文",
+    "source_text": "摘 要： 针对复杂停车场环境中的停车与寻车困难的问题，本文提出一种基于改进 Ａ∗ 算法的复杂停车场路径规划方法。 通过对节点间代价进行统一量化以及对路径中的拐角进行修正，避免了不必要转向，优化了规划路径，提高了效率。 并且基于仿真软件，根据实际停车场环境，建立环境地图进行仿真模拟；在相同条件下，对传统 Ａ∗ 算法、改进 Ａ∗ 算法与 Ｄｉｊｋｓｔｒａ 算法以及 ＢＦＳ 算法进行仿真测试，对 ４ 种算法的路径规划时间、转向次数以及所规划路径的优劣进行了评估。 仿真模拟结果表明改进后的 Ａ∗ 算法具有明显的优势。关键词： 路径规划； Ａ∗ 算法； 停车场景",
+    "source_lang": "zh-CN",
+    "target_lang": "en-US",
+    "test_points": [
+      "专业文献",
+      "论文摘要"
+    ],
+    "reference": "【Ａｂｓｔｒａｃｔ】 Ｒｅｇａｒｄｉｎｇ ｔｏ ｔｈｅ ｄｉｆｆｉｃｕｌｔｙ ｏｆ ｐａｒｋｉｎｇ ａｎｄ ｓｅａｒｃｈｉｎｇ ｉｎ ｃｏｍｐｌｅｘ ｐａｒｋｉｎｇ ｌｏｔ ｅｎｖｉｒｏｎｍｅｎｔ， ｔｈｉｓ ｐａｐｅｒ ｐｒｏｐｏｓｅｓ ａ ｃｏｍｐｌｅｘｐａｒｋｉｎｇ ｌｏｔ ｒｏｕｔｉｎｅ ｐｌａｎｎｉｎｇ ｍｅｔｈｏｄ ｂａｓｅｄ ｏｎ ｉｍｐｒｏｖｅｄ Ａ∗ａｌｇｏｒｉｔｈｍ． Ｂｙ ｕｎｉｆｏｒｍｌｙ ｑｕａｎｔｉｆｙｉｎｇ ｔｈｅ ｃｏｓｔ ｂｅｔｗｅｅｎ ｎｏｄｅｓ ａｎｄｃｏｒｒｅｃｔｉｎｇ ｔｈｅ ｃｏｒｎｅｒｓ ｉｎ ｔｈｅ ｒｏｕｔｉｎｅ， ｕｎｎｅｃｅｓｓａｒｙ ｔｕｒｎｉｎｇ ｉｓ ａｖｏｉｄｅｄ， ｔｈｅ ｐｌａｎｎｅｄ ｐａｔｈ ｉｓ ｏｐｔｉｍｉｚｅｄ ａｎｄ ｔｈｅ ｅｆｆｉｃｉｅｎｃｙ ｉｓ ｉｍｐｒｏｖｅｄ．Ｆｕｒｔｈｅｒｌｙ， ｂａｓｅｄ ｏｎ ｔｈｅ ｓｉｍｕｌａｔｉｏｎ ｓｔｕｄｉｅｓ， ａｃｃｏｒｄｉｎｇ ｔｏ ｔｈｅ ａｃｔｕａｌ ｐａｒｋｉｎｇ ｅｎｖｉｒｏｎｍｅｎｔ ｓｃｅｎｅ， ｔｈｅ ｅｎｖｉｒｏｎｍｅｎｔ ｍａｐ ｉｓ ｅｓｔａｂｌｉｓｈｅｄｆｏｒ ｓｉｍｕｌａｔｉｏｎ； ｕｎｄｅｒ ｔｈｅ ｓａｍｅ ｃｏｎｄｉｔｉｏｎｓ， ｔｈｅ ｔｒａｄｉｔｉｏｎａｌ Ａ∗ａｌｇｏｒｉｔｈｍ， ｉｍｐｒｏｖｅｄ Ａ∗ａｌｇｏｒｉｔｈｍ， Ｄｉｊｋｓｔｒａ ａｌｇｏｒｉｔｈｍ ａｎｄ ＢＦＳａｌｇｏｒｉｔｈｍ ａｒｅ ｓｉｍｕｌａｔｅｄ ａｎｄ ｔｅｓｔｅｄ， ａｎｄ ｔｈｅ ｒｏｕｔｉｎｅ ｐｌａｎｎｉｎｇ ｔｉｍｅ， ｔｕｒｎｉｎｇ ｔｉｍｅｓ ａｎｄ ｔｈｅ ａｄｖａｎｔａｇｅｓ ａｎｄ ｄｉｓａｄｖａｎｔａｇｅｓ ｏｆ ｔｈｅ ｐｌａｎｎｅｄｒｏｕｔｉｎｅ ｏｆ ｔｈｅ ｆｏｕｒ ａｌｇｏｒｉｔｈｍｓ ａｒｅ ｅｖａｌｕａｔｅｄ． Ｓｉｍｕｌａｔｉｏｎ ｒｅｓｕｌｔｓ ｓｈｏｗ ｔｈａｔ ｔｈｅ ｉｍｐｒｏｖｅｄ Ａ∗ａｌｇｏｒｉｔｈｍ ｈａｓ ｏｂｖｉｏｕｓ ａｄｖａｎｔａｇｅｓ．【Ｋｅｙ ｗｏｒｄｓ】 ｒｏｕｔｉｎｅ ｐｌａｎｎｉｎｇ； Ａ∗ａｌｇｏｒｉｔｈｍ； ｐａｒｋｉｎｇ ｓｃｅｎｅ",
+    "translations": [
+      {
+        "provider": "zhipu",
+        "translation": "Abstract: To address the difficulties in parking and finding vehicles in complex parking environments, this paper proposes a path planning method for complex parking lots based on an improved A* algorithm. By uniformly quantifying the cost between nodes and correcting corners in the path, unnecessary turns are avoided, the planned path is optimized, and efficiency is improved. Furthermore, based on simulation software, an environmental map was established according to the actual parking environment for simulation. Under the same conditions, simulation tests were conducted on traditional A* algorithm, improved A* algorithm, Dijkstra algorithm, and BFS algorithm. The path planning time, number of turns, and quality of the planned paths of the four algorithms were evaluated. The simulation results show that the improved A* algorithm has significant advantages. Keywords: Path planning; A* algorithm; Parking scenario",
+        "timestamp": "2026-05-08 14:10:22"
+      }
+    ]
+  }
+]
